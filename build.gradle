@@ -35,7 +35,6 @@ dependencies {
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.0.2.RELEASE'
     compile group: 'com.amazonaws', name: 'aws-java-sdk-s3', version: '1.11.328'
     compile group: 'com.amazonaws', name: 'aws-java-sdk-dynamodb', version: '1.11.328'
-    compile group: 'com.fasterxml.jackson.module', name: 'jackson-modules-java8', version: '2.9.5'
 }
 
 dependencyManagement {
