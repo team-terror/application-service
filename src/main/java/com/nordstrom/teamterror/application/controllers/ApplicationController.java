@@ -32,9 +32,9 @@ public class ApplicationController {
 
         AwsClientBuilder.EndpointConfiguration endpointConfiguration = new AwsClientBuilder.EndpointConfiguration
                 ("http://localhost:8000", "us-west-2");
-        AmazonDynamoDBClientBuilder amazonDynamodDbBuilder = AmazonDynamoDBClientBuilder.standard();
-        amazonDynamodDbBuilder.setEndpointConfiguration(endpointConfiguration);
-        final AmazonDynamoDB ddb = amazonDynamodDbBuilder.build();
+        AmazonDynamoDBClientBuilder amazonDynamoDbBuilder = AmazonDynamoDBClientBuilder.standard();
+        amazonDynamoDbBuilder.setEndpointConfiguration(endpointConfiguration);
+        final AmazonDynamoDB ddb = amazonDynamoDbBuilder.build();
 
         ddb.putItem("team-terror-applications", item_values);
     }
